@@ -5,12 +5,12 @@ const route= express.Router();
 
 
 // app.use(reqFilter);
-route.use(reqFilter)
+//route.use(reqFilter)
 app.get('/', (res, resp) => {
     resp.send('Welcome to Home page')
 });
 
-app.get('/users', (res, resp) => {
+app.get('/users', reqFilter, (res, resp) => { //used for single file
     resp.send('Welcome to Users page')
 });
 
