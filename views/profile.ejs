@@ -5,16 +5,17 @@
     <title>Profile Page</title>
 </head>
 <body>
-    <%- include('common/header'); %>
+    <%- include('common/header'); %> <!-- load html --> 
     <h1>Welcome, <%= user.name %></h1>
     <h3><%= user.email %></h3>
     <h3><%= user.country %></h3>
+    <h1><%= user.skills %></h1>
 
     <ul>
         <% user.skills.forEach((item)=>{%>
         <li><%= item %></li>
         <% })%>
     </ul>
-
+    <%- include('common/footer'); %>
 </body>
 </html>
