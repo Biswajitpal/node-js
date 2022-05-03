@@ -14,3 +14,4 @@ const filePath = `${dirPath}/apple.txt`;
 // })
 
 fs.unlinkSync(`${dirPath}/fruit.txt`);
+//Buffer is temporary memory used by node
